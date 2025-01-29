@@ -19,6 +19,9 @@ This repository contains the implementation of DHTCUN, a cutting-edge hybrid mod
 
 ![DHTCUN](./Figures/DHTCUN_architecture.PNG)
 
+![PHTCB (Parallel Hybrid Transformer CNN Block)](./Figures/PHTCB_structure.PNG)
+
+
 Key Highlights:
 Parallel Hybrid Design: Combines CNNs and Transformers for long-range dependencies and noise reduction.
 Triple Enhanced Spatial Attention: Focuses on critical image features while suppressing noise.
@@ -74,7 +77,7 @@ Cd to 'src', run the following scripts.
 ## Results
 ### Visual Patches
 
-![BSD100x4](./Figures/Urbanx4.PNG)
+![Urban100x4](./Figures/Urbanx4.PNG)
 
 ![BSD100x8](./Figures/BSDx8.PNG)
 
@@ -88,11 +91,13 @@ Cd to 'src', run the following scripts.
 
 ![Execution Time](./Figures/Execution_Time.PNG)
 
-![Space Complexity](./Figures/space_complexity.PNG)
+![Space Complexity](./Figures/Space_complexity.PNG)
 
 ![Time Complexity](./Figures/Time_complexity.PNG)
 
-![Flops](./Figures/Flops.PNG)
+![Multi-Adds](./Figures/Multi-Addds.PNG)
+
+![PSNR Convergence](./Figures/Convergence.PNG)
 
 For more Quantitative Results please read the paper [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1)
 
