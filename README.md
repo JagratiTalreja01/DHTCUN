@@ -23,9 +23,13 @@ This repository contains the implementation of DHTCUN, a cutting-edge hybrid mod
 
 
 Key Highlights:
+
 Parallel Hybrid Design: Combines CNNs and Transformers for long-range dependencies and noise reduction.
+
 Triple Enhanced Spatial Attention: Focuses on critical image features while suppressing noise.
+
 Computational Efficiency: Optimized with skip connections and pixel shuffle for reduced complexity.
+
 DHTCUN significantly improves PSNR and SSIM scores across benchmark datasets while maintaining computational efficiency, making it ideal for applications like medical imaging, satellite imagery, and surveillance.
 
 Deep Hybrid Transformer CNN U Network for Single Image Super Resolution.
@@ -57,7 +61,7 @@ Cd to 'src', run the following script to train models.
 
     ```bash
     # Example X2 SR
-    python main.py --dir_data ../../Dataset/ --n_GPUs 1 --rgb_range 1 --chunk_size 144 --n_hashes 4 --save_models --lr 1e-4 --decay 200-400-600-800 --epochs 300 --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model dhtcun --scale 2 --patch_size 96 --save Dans_x2 --data_train DIV2K
+    python main.py --dir_data ../../Dataset/ --n_GPUs 1 --rgb_range 1 --chunk_size 144 --n_hashes 4 --save_models --lr 1e-4 --decay 200-400-600-800 --epochs 300 --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model dhtcun --scale 2 --patch_size 96 --save DHTCUN_x2 --data_train DIV2K
     ```
 ## Test
 ### Quick start
