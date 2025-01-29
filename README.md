@@ -1,6 +1,6 @@
 # DHTCUN
 # Deep Hybrid Transformer CNN U Network for Single Image Super Resolution
-This repository is for DHTCUN introduced in the following paper "Deep Attention Network for Single Image Super Resolution", IEEE Access, [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1) 
+This repository is for DHTCUN introduced in the following paper "Deep Hybrid Transformer CNN U Network for Single Image Super Resolution", IEEE Access, [[Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10648606&tag=1) 
 
 
 The code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT) and tested on Ubuntu 18.04 environment (Python3.6, PyTorch >= 1.1.0) with NVIDIA GeForce GTX 2080ti GPU. 
