@@ -15,17 +15,17 @@ The code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT) and tested
 
 ## Introduction
 
-This repository contains the implementation of DANS, a novel Deep Attention Network for Single Image Super-Resolution (SISR). DANS leverages a U-Net-based encoder-decoder structure, non-local sparse attention mechanisms, and inception blocks to enhance the reconstruction of high-resolution images from low-resolution inputs. The model achieves state-of-the-art performance in terms of quantitative metrics (PSNR, SSIM) and computational efficiency across multiple benchmark datasets.
+This repository contains the implementation of DHTCUN, a cutting-edge hybrid model combining Convolutional Neural Networks (CNNs) and Transformers for Single-Image Super-Resolution (SISR). The architecture features a U-shaped design with Parallel Hybrid Transformer CNN Blocks (PHTCB) and Triple Enhanced Spatial Attention (TESA) mechanisms to achieve superior high-resolution image reconstruction.
 
-![DANS](./Figures/DANS_architecture.PNG)
+![DHTCUN](./Figures/DHTCUN_architecture.PNG)
 
-Key features:
+Key Highlights:
+Parallel Hybrid Design: Combines CNNs and Transformers for long-range dependencies and noise reduction.
+Triple Enhanced Spatial Attention: Focuses on critical image features while suppressing noise.
+Computational Efficiency: Optimized with skip connections and pixel shuffle for reduced complexity.
+DHTCUN significantly improves PSNR and SSIM scores across benchmark datasets while maintaining computational efficiency, making it ideal for applications like medical imaging, satellite imagery, and surveillance.
 
-Non-local Sparse Attention: Captures long-range dependencies to improve contextual learning.
-Inception Blocks: Enables multi-scale feature representation for enhanced detail reconstruction.
-Efficient Architecture: Reduces computational costs with depth-wise separable convolutions and skip connections.
-
-Deep Attention Network for Single Image Super Resolution.
+Deep Hybrid Transformer CNN U Network for Single Image Super Resolution.
 
 ## Dependencies
 * Python 3.6
@@ -74,7 +74,7 @@ Cd to 'src', run the following scripts.
 ## Results
 ### Visual Patches
 
-![BSD100x4](./Figures/BSDx4.PNG)
+![BSD100x4](./Figures/Urbanx4.PNG)
 
 ![BSD100x8](./Figures/BSDx8.PNG)
 
@@ -99,22 +99,19 @@ For more Quantitative Results please read the paper [[Link]](https://ieeexplore.
 ## Citation
 If you find the code helpful in your research or work, please cite the following papers.
 ```
-@ARTICLE{10210219,
+@ARTICLE{10648606,
   author={Talreja, Jagrati and Aramvith, Supavadee and Onoye, Takao},
   journal={IEEE Access}, 
-  title={DANS: Deep Attention Network for Single Image Super-Resolution}, 
-  year={2023},
-  volume={11},
+  title={DHTCUN: Deep Hybrid Transformer CNN U Network for Single-Image Super-Resolution}, 
+  year={2024},
+  volume={12},
   number={},
-  pages={84379-84397},
-  keywords={Superresolution;Computational modeling;Image reconstruction;Network architecture;Image resolution;Neural networks;Representation learning;Image super-resolution;inception blocks;non-local sparse attention;U-Net},
-  doi={10.1109/ACCESS.2023.3302692}}
+  pages={122624-122641},
+  keywords={Transformers;Superresolution;Convolutional neural networks;Noise measurement;Computational modeling;Noise measurement;Image reconstruction;CNN;enhanced spatial attention;single-image super-resolution;Transformer},
+  doi={10.1109/ACCESS.2024.3450300}}
 
 ```
 
 ## Acknowledgements
-This code is built on [NLSN (PyTorch)](https://github.com/HarukiYqM/Non-Local-Sparse-Attention) and [edsr-pytorch](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their codes.
-![GRAPHICAL ABSTRACT (GA)](https://github.com/user-attachments/assets/c593191c-94ba-43fe-b459-1a6658f93df2)
-# DHTCUN
-Deep Hybrid Transformer CNN U Network for Single-Image Super-Resolution
-https://ieeexplore.ieee.org/document/10648606
+This code is built on [HNCT (PyTorch)](https://github.com/lhjthp/HNCT/tree/main) and [edsr-pytorch](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their codes.
+
